@@ -5,12 +5,12 @@
   <archetypes>
   	
   	<!-- Maven骨架 -->
-  	<!-- archetype>
+  	<archetype>
       <groupId>exp.libs</groupId>
       <artifactId>mojo-archetype</artifactId>
       <version>1.0</version>
       <repository>http://127.0.0.1:8081/nexus/content/repositories/releases</repository>
-    </archetype -->
+    </archetype>
     <archetype>
       <groupId>exp.libs</groupId>
       <artifactId>mojo-archetype</artifactId>
