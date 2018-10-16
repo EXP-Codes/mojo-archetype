@@ -11,7 +11,7 @@ Maven项目规范骨架
 
 ## 软件介绍
 
-　快速创建一个规范架构的Java后端项目（Maven版），使得项目中自动内置：
+　快速创建一个规范架构的**Java后端项目（Maven版）**，使得**项目中自动内置**：
 
 - [经验构件库](https://github.com/lyy289065406/exp-libs)：*用于快速开发的辅助包*
 - [Maven项目发布插件](https://github.com/lyy289065406/mojo-release-plugin)：*用于快速发布一个可运行应用到生产环境*
