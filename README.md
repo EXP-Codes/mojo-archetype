@@ -15,15 +15,15 @@ Maven项目规范骨架
 
 - [经验构件库](https://github.com/lyy289065406/exp-libs)：*用于快速开发的辅助包*
 - [Maven项目发布插件](https://github.com/lyy289065406/mojo-release-plugin)：*用于快速发布一个可运行应用到生产环境*
-- 混淆打包插件：*第三方插件，用于保护所发布的项目代码*
-- Ant插件：*第三方插件，用于拷贝项目配置、文档等资源到发布包*
-- 基线发布插件：*第三方插件，用于发布项目基线到版本库和Nexus私服*
+- 混淆打包插件：*第三方插件`proguard-maven-plugin`，用于保护所发布的项目代码*
+- Ant插件：*第三方插件`maven-antrun-plugin`，用于拷贝项目配置、文档等资源到发布包*
+- 基线发布插件：*第三方插件`maven-release-plugin`，用于发布项目基线到版本库和Nexus私服*
 
 
 ## 使用说明
 
 - 01.　本地已安装并部署好 apache-maven-3.2.5（或更高版本）
-- 02.　下载本骨架项目`mojo-archetype`到本地，拷贝 `mojo-archetype/conf/archetype-catalog.xml` 文件到 `apache-maven-3.2.5/conf` 目录下，<br/>若目录下已存在同名文件，则只需把 `archetype-catalog.xml` 的内容附加进去即可：<br/>
+- 02.　下载本骨架项目`mojo-archetype`到本地，拷贝 `mojo-archetype/conf/archetype-catalog.xml` 文件到 `apache-maven-3.2.5/conf` 目录下，若目录下已存在同名文件，则只需把 `archetype-catalog.xml` 的内容附加进去即可：<br/>
 ```
 <!-- Maven骨架 -->
 <archetype>
