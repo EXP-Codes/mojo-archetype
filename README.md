@@ -1,5 +1,5 @@
 # mojo-archetype
-Maven项目骨架
+Maven项目规范骨架
 
 ------
 
@@ -11,10 +11,39 @@ Maven项目骨架
 
 ## 软件介绍
 
-　快速创建一个具备基本配置的空J2SE项目（含构件库各类构件的使用说明）
+　快速创建一个规范架构的Java后端项目（Maven版），使得项目中自动内置：
+
+- [经验构件库](https://github.com/lyy289065406/exp-libs)：*用于快速开发的辅助包*
+- [Maven项目发布插件](https://github.com/lyy289065406/mojo-release-plugin)：*用于快速发布一个可运行应用到生产环境*
+- 混淆打包插件：*第三方插件，用于保护所发布的项目代码*
+- Ant插件：*第三方插件，用于拷贝项目配置、文档等资源到发布包*
+- 基线发布插件：*第三方插件，用于发布项目基线到版本库和Nexus私服*
 
 
-> 使用说明待补充
+## 使用说明
+
+- 01.　本地已安装并部署好 apache-maven-3.2.5（或更高版本）
+- 02.　下载本骨架项目`mojo-archetype`到本地，拷贝 `mojo-archetype/conf/archetype-catalog.xml` 文件到 `apache-maven-3.2.5/conf` 目录下，<br/>若目录下已存在同名文件，则只需把 `archetype-catalog.xml` 的内容附加进去即可：<br/>
+```
+<!-- Maven骨架 -->
+<archetype>
+  <groupId>exp.libs</groupId>
+  <artifactId>mojo-archetype</artifactId>
+  <version>1.0</version>   <!-- 注意版本号要根据实际发布的骨架版本号调整 -->
+  <repository>http://127.0.0.1:8081/nexus/content/repositories/releases</repository> <!-- 若本地部署了Nexus私服则如实填写，这是releases库 -->
+</archetype>
+<archetype>
+  <groupId>exp.libs</groupId>
+  <artifactId>mojo-archetype</artifactId>
+  <version>1.0-SNAPSHOT</version>  <!-- 同名骨架可配置多个版本号，但只有最高版本生效 -->
+  <repository>http://127.0.0.1:8081/nexus/content/repositories/snapshots</repository> <!-- 若本地部署了Nexus私服则如实填写，这是snapshots库 -->
+</archetype>
+```
+- 03.　通过 `maven install` 命令安装骨架到本地 Maven Repository
+- 04.　（可选）若本地部署了 Nexus 私服，可通过 `maven deploy` 命令直接发布骨架到私服
+- 05.　
+- 06.　新建Maven项目，并选择此骨架进行项目构件：<br/>
+![新建Maven项目](https://raw.githubusercontent.com/lyy289065406/mojo-archetype/master/doc/%E6%95%88%E6%9E%9C%E6%88%AA%E5%9B%BE/01-%E9%80%89%E6%8B%A9Maven%E9%AA%A8%E6%9E%B6.png)
 
 
 ## 版权声明

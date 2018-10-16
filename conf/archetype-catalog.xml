@@ -4,19 +4,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <archetypes>
   	
-  	<!-- Maven骨架 -->
-  	<archetype>
-      <groupId>exp.libs</groupId>
-      <artifactId>mojo-archetype</artifactId>
-      <version>1.0</version>
-      <repository>http://127.0.0.1:8081/nexus/content/repositories/releases</repository>
-    </archetype>
-    <archetype>
-      <groupId>exp.libs</groupId>
-      <artifactId>mojo-archetype</artifactId>
-      <version>1.0-SNAPSHOT</version>
-      <repository>http://127.0.0.1:8081/nexus/content/repositories/snapshots</repository>
-    </archetype>
+	<!-- Maven骨架 -->
+	<archetype>
+	  <groupId>exp.libs</groupId>
+	  <artifactId>mojo-archetype</artifactId>
+	  <version>1.0</version>
+	  <repository>http://127.0.0.1:8081/nexus/content/repositories/releases</repository>
+	</archetype>
+	<archetype>
+	  <groupId>exp.libs</groupId>
+	  <artifactId>mojo-archetype</artifactId>
+	  <version>1.0-SNAPSHOT</version>
+	  <repository>http://127.0.0.1:8081/nexus/content/repositories/snapshots</repository>
+	</archetype>
     
   </archetypes>
 </archetype-catalog>
