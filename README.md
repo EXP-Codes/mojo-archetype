@@ -53,7 +53,7 @@ Maven项目规范骨架
 
 ## 补充：通过本骨架所生成示例项目的pom.xml文件
 
-> 点击 [这里](https://github-production-release-asset-2e65be.s3.amazonaws.com/148517307/ffaece00-d2c0-11e8-823d-ef3df7462896?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20181018%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20181018T024647Z&X-Amz-Expires=300&X-Amz-Signature=910405bc5dc13ed7591a9ed2f044edd70dfd59fcc9d8be9b6399b356133d68b6&X-Amz-SignedHeaders=host&actor_id=17040287&response-content-disposition=attachment%3B%20filename%3Ddemo-archetype.zip&response-content-type=application%2Foctet-stream) 下载示例项目
+> 点击 [这里](https://github-production-release-asset-2e65be.s3.amazonaws.com/148517307/80c29100-d2d2-11e8-88aa-212965139563?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20181018%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20181018T050126Z&X-Amz-Expires=300&X-Amz-Signature=945ee5bacda2ef9f8ca5148c456494f70355e972c3ed3b79280f2bdd2a39af98&X-Amz-SignedHeaders=host&actor_id=17040287&response-content-disposition=attachment%3B%20filename%3Ddemo-archetype.zip&response-content-type=application%2Foctet-stream) 下载示例项目
 
 
 ```xml
