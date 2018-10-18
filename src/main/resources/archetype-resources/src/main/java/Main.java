@@ -21,6 +21,8 @@ public class Main {
 	public static void main(String[] args) {
 		LogUtils.loadLogBackConfig();
 		// TODO: 程序入口
+		
+		System.out.println("Copyright(C) By EXP - http://www.exp-blog.com");
 	}
 	
 }

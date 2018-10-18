@@ -22,6 +22,8 @@ public class Main {
 		Config.getInstn().reflash(60000);	// 初始化配置项(每隔60秒刷新一次)
 		
 		// TODO: 程序入口
+		
+		System.out.println("Copyright(C) By EXP - http://www.exp-blog.com");
 	}
 	
 }
