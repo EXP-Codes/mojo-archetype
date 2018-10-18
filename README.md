@@ -17,7 +17,7 @@ Maven项目规范骨架
 - [Maven项目发布插件](https://github.com/lyy289065406/mojo-release-plugin)：*用于快速发布一个可运行应用到生产环境*
 - 混淆打包插件：*第三方插件`proguard-maven-plugin`，用于保护所发布的项目代码*
 - Ant插件：*第三方插件`maven-antrun-plugin`，用于拷贝项目配置、文档等资源到发布包*
-- 基线发布插件：*第三方插件`maven-release-plugin`，用于发布项目基线到版本库和Nexus私服*
+- 基线发布插件：*第三方插件`maven-release-plugin`，用于发布项目基线到版本库和 Nexus私服*
 
 
 ## 使用说明
