@@ -98,8 +98,8 @@ Maven项目规范骨架
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <release.dir>${project.build.directory}/${project.artifactId}-${project.version}</release.dir>
         <jdk.version>1.6</jdk.version>
-        <explibs.version>1.0-SNAPSHOT</explibs.version>
-        <mrp.plugin.version>1.0-SNAPSHOT</mrp.plugin.version>
+        <explibs.version>1.0</explibs.version>
+        <mrp.plugin.version>1.0</mrp.plugin.version>
     </properties>
 
     <!-- 项目依赖 -->
