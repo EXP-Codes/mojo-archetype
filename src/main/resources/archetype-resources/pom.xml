@@ -41,9 +41,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <release.dir>${symbol_dollar}{project.build.directory}/${symbol_dollar}{project.artifactId}-${symbol_dollar}{project.version}</release.dir>
-        <jdk.version>1.6</jdk.version>
-        <explibs.version>1.0</explibs.version>
-        <mrp.plugin.version>1.0</mrp.plugin.version>
+        <jdk.version>1.8</jdk.version>
+        <explibs.version>1.2-SNAPSHOT</explibs.version>
+        <mrp.plugin.version>1.1-SNAPSHOT</mrp.plugin.version>
     </properties>
 
     <!-- 项目依赖 -->
@@ -86,7 +86,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.3.2</version>
                 <configuration>
                     <!-- 项目的SVN基线目录（需保证目录已存在） -->
                     <tagBase>http://127.0.0.1:81/svn/release/???/tags</tagBase>
@@ -97,7 +96,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.7.2</version>
                 <configuration>
                     <!-- 解决控制台输出乱码问题 -->
                     <forkMode>once</forkMode>
@@ -117,7 +115,6 @@
             <plugin>
                 <groupId>com.github.wvengen</groupId>
                 <artifactId>proguard-maven-plugin</artifactId>
-                <version>2.0.7</version>
                 <executions>
                     <execution>
                         <phase>package</phase>    <!-- 触发混淆打包的maven周期 -->
@@ -307,7 +304,6 @@
             <!-- plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>2.1.2</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -326,12 +322,17 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
                 <configuration>
                     <aggregate>true</aggregate>
                     <charset>UTF-8</charset>
                     <encoding>UTF-8</encoding>
                     <docencoding>UTF-8</docencoding>
+                    
+                    <!-- 从JDK8开始, Javadoc中添加了doclint, 目的是旨在获得符合W3C HTML 4.01标准规范的HTML文档 -->
+                    <!-- 简而言之Javadoc不允许出现html相关的元素, 若旧注释含有这些元素又不想修改, 只能关闭doclint -->
+                    <additionalOptions>
+                        <additionalOption>-Xdoclint:none</additionalOption>
+                    </additionalOptions>
                 </configuration>
                 <executions>
                     <execution>
